@@ -33,59 +33,48 @@ chmod +x banner
 ----------------------------
 
 touch getIdentifiers
-
 nano getIdentifiers
 
 //--//
-
 FILE="$1"
 
 grep '\b[a-zA-Z_][a-zA-Z0-9_]*\b' "$FILE" | sort -u | tr '\n' ' '
 
 echo
-
 //--//
 
 chmod +x getIdentifiers
-
 ./getIdentifiers hello.c
 
 Практическое задание 5
 ----------------------------
 
 touch comSch
-
 nano comSch
 
 //--//
-
 #!/bin/bash
 
 FILE="$1"
 
-
 if [[ "$FILE" != *.js && "$FILE" != *.py ]]; then
-
     exit 1
-    
 fi
 
 if head -1 "$FILE" | grep -E '^[[:space:]]*(//|#)' > /dev/null; then
-
-    echo "✅ Comment found on first line"
-    
+    echo "Есть комментарий на первой строке"
     exit 0
-    
 else
-
-    echo "❌ No comment on first line"
-    
+    echo "Нет комментария на первой строке"
     exit 1
-    
 fi
-
 //--//
 
+chmod +x comSch
+./comSch bench.py (hello.js)
+
+Практическое задание 5
+----------------------------
 
 
 
