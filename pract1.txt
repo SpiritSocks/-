@@ -94,3 +94,29 @@ chmod +x comSch
 
 
 
+Практическое задание 8
+----------------------------
+
+touch archiver
+nano archiver
+
+//--//
+#!/bin/bash
+
+EXT="$1"
+ARCHIVE="${EXT}_files.tar"
+
+tar -cf "$ARCHIVE" *."$EXT" 2>/dev/null
+
+echo "Архив '$ARCHIVE' создан"
+//--//
+
+chmod +x archiver
+./archiver txt
+
+Практическое задание 9
+----------------------------
+
+Практическое задание 10
+----------------------------
+
