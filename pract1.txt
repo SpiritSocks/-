@@ -46,7 +46,7 @@ echo
 chmod +x getIdentifiers
 ./getIdentifiers hello.c
 
-Практическое задание 5
+Практическое задание 6
 ----------------------------
 
 touch comSch
@@ -73,7 +73,7 @@ fi
 chmod +x comSch
 ./comSch bench.py (hello.js)
 
-Практическое задание 5
+Практическое задание 7
 ----------------------------
 
 
