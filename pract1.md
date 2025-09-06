@@ -29,8 +29,23 @@ echo "| $TEXT |"
 
 echo "+$LINE+"
 
+chmod +x banner
+
 ./banner "Hello from RTU MIREA"
 
 Практическое задание 4
 ----------------------------
 
+touch getIdentifiers
+
+nano getIdentifiers
+
+FILE="$1"
+
+grep '\b[a-zA-Z_][a-zA-Z0-9_]*\b' "$FILE" | sort -u | tr '\n' ' '
+
+echo
+
+chmod +x getIdentifiers
+
+./getIdentifiers hello.c
