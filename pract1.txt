@@ -117,6 +117,23 @@ chmod +x archiver
 Практическое задание 9
 ----------------------------
 
+touch spcToTab
+touch readme2.txt
+nano spcToTab
+
+//--//
+#!/bin/bash
+
+INFILE="$1"
+OUTFILE="$2"
+TAB=$(printf '\t')
+
+sed 's/    /\t/g' "$INFILE" > "$OUTFILE"
+//--//
+
+chmod +x spcToTab
+./spcToTab readme.txt readme2.txt
+
 Практическое задание 10
 ----------------------------
 
