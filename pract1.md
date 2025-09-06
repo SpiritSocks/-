@@ -11,9 +11,8 @@ awk '{print $2, $3}' /etc/protocols | sort -k1, -n -r | head -n 5
 Практическое задание 3
 ----------------------------
 
-touch banner
-
-nano banner
+    touch banner
+    nano banner
 
 //--//
 
