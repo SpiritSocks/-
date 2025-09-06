@@ -61,4 +61,39 @@ chmod +x getIdentifiers
 Практическое задание 5
 ----------------------------
 
+touch comSch
+
+nano comSch
+
+//--//
+
+#!/bin/bash
+
+FILE="$1"
+
+
+if [[ "$FILE" != *.js && "$FILE" != *.py ]]; then
+
+    exit 1
+    
+fi
+
+if head -1 "$FILE" | grep -E '^[[:space:]]*(//|#)' > /dev/null; then
+
+    echo "✅ Comment found on first line"
+    
+    exit 0
+    
+else
+
+    echo "❌ No comment on first line"
+    
+    exit 1
+    
+fi
+
+//--//
+
+
+
 
