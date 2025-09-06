@@ -57,3 +57,8 @@ echo
 chmod +x getIdentifiers
 
 ./getIdentifiers hello.c
+
+Практическое задание 5
+----------------------------
+
+
