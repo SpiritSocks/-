@@ -46,6 +46,22 @@ echo
 chmod +x getIdentifiers
 ./getIdentifiers hello.c
 
+Практическое задание 5
+----------------------------
+touch reg
+nano reg
+
+//--//
+#!/bin/bash
+
+cp "$1" /usr/local/bin/
+
+chmod 755 /usr/local/bin/"$1"
+//--//
+
+chmod +x reg
+./reg banner
+
 Практическое задание 6
 ----------------------------
 
