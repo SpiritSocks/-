@@ -15,6 +15,7 @@ touch banner
 
 nano banner
 
+//--//
 #!/bin/bash
 
 TEXT="$*"
@@ -28,6 +29,7 @@ echo "+$LINE+"
 echo "| $TEXT |"
 
 echo "+$LINE+"
+//--//
 
 chmod +x banner
 
