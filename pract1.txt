@@ -3,7 +3,7 @@
 
 cat /etc/passwd | cut -d: -f1 | sort
 или
-cat /etc/passwd | grep -E '^[a-zA-Z_]*:' | cut -d: -f1 | sort
+cat /etc/passwd | grep -E '^[a-zA-Z_]*:' | sort
 
 Практическое задание 2
 ----------------------------
